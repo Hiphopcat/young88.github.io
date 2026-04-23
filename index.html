@@ -1,65 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>自我介紹 - vm_ul4indxl</title>
-  <style>
-    body {
-      font-family: "Microsoft JhengHei", sans-serif;
-      background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 30px;
-    }
-    h1 {
-      text-align: center;
-      color: #007acc;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
-    }
-    p {
-      line-height: 1.6;
-    }
-    ul {
-      list-style: disc;
-      margin-left: 25px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林揚程的個人專業履歷</title>
+    <style>
+        :root {
+            --primary-blue: #1a3a5f;
+            --accent-gold: #f39c12;
+            --bg-gray: #f4f7f9;
+        }
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .header {
+            background: var(--primary-blue);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 3px;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 25px;
+        }
+        .section-title {
+            color: var(--primary-blue);
+            font-size: 18px;
+            border-left: 5px solid var(--accent-gold);
+            padding-left: 10px;
+            margin: 20px 0 15px;
+            font-weight: bold;
+        }
+        .school-box {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 8px;
+            color: #444;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .cert-item {
+            background: #eef2f7;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #cbd5e0;
+        }
+        .cert-item.expert {
+            background: #fff4e5;
+            color: #d35400;
+            border-bottom: 2px solid var(--accent-gold);
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #bbb;
+            background: #fafafa;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>自我介紹</h1>
-    <h2>關於我</h2>
-    <p>大家好！我是 <strong>林揚程</strong>，一名熱愛學習與挑戰的新世代創意工作者。目前就讀於資訊管理系，對於網頁設計與資料分析特別感興趣。</p>
 
-    <h2>我的興趣</h2>
-    <ul>
-      <li>設計簡潔、有互動性的網頁版面</li>
-      <li>閱讀心理學與科技相關書籍</li>
-      <li>旅行與攝影，記錄生活小細節</li>
-    </ul>
+<div class="container">
+    <div class="header">
+        <h1>林揚程</h1>
+        <p>技術專業與工程實務</p>
+    </div>
 
-    <h2>技能專長</h2>
-    <ul>
-      <li>HTML / CSS / JavaScript 網頁開發</li>
-      <li>Python 資料分析</li>
-      <li>Adobe XD 與 Figma 介面設計</li>
-    </ul>
+    <div class="content">
+        <div class="section-title">教育背景</div>
+        <div class="school-box">
+            <strong>國立勤益科技大學</strong><br>
+            專業技術人才培養中
+        </div>
 
-    <h2>目標</h2>
-    <p>希望未來能夠結合技術與創意，開發出讓生活更便利的數位產品，成為能夠影響社會的產品設計師。</p>
-  </div>
+        <div class="section-title">專業國家檢定證照</div>
+        <div class="cert-grid">
+            <div class="cert-item expert">儀表電子 乙級</div>
+            <div class="cert-item">氣壓 丙級</div>
+            <div class="cert-item">工業配線 丙級</div>
+            <div class="cert-item">工業電子 丙級</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 林揚程 個人網頁 | 透過 GitHub Pages 託管
+    </div>
+</div>
+
 </body>
 </html>
+
